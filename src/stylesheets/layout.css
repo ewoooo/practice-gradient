@@ -1,0 +1,37 @@
+header {
+	padding: 0 16px 0 16px;
+	margin-bottom: 24px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	padding: 0 16px 0 16px;
+}
+
+.controls {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.preview {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 16px;
+}
+.preview-canvas-wrapper {
+	grid-row: 1 / span 2;
+	border-radius: 8px;
+	display: flex;
+	flex-flow: column;
+}
+
+.preview-canvas {
+	flex: 1;
+	border-radius: 8px;
+}
+
+.preview-syntax {
+}

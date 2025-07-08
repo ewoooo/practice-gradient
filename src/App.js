@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "non.geist";
+import "non.geist/font-faces/GeistMono-Regular.css";
+
+import "./stylesheets/reset.css";
+import "./stylesheets/typography.css";
+import "./stylesheets/layout.css";
+import "./stylesheets/components.css";
+import "./App.css";
+
+import React from "react";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Contents from "./components/Contents";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header />
+			<Contents />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
